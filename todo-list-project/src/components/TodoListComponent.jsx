@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 const TodoListComponent = ({ list, handleEditList, handleDeleteItem }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -9,7 +9,7 @@ const TodoListComponent = ({ list, handleEditList, handleDeleteItem }) => {
     if (newList) {
       handleEditList(list.id, newList);
       setIsEditing(false);
-      setError;
+      setError("");
     } else {
       setError("To Do List must not be empty");
     }

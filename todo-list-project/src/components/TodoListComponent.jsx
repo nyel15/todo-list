@@ -45,7 +45,7 @@ const TodoListComponent = ({ list, handleEditList, handleDeleteItem }) => {
           </button>
         </div>
       </li>
-      {error ? <p className="error"> {error}</p> : null}
+      {error ? <p className="error">{error}</p> : null}
     </>
   );
 };
